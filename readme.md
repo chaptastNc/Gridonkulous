@@ -3,6 +3,8 @@ Gridonkulous: A tiny fluid grid for Less
 
 Gridonkulous is a simple fluid grid system for Less. You can use it with semantic class names or numerical class names, your choice. It's mobile-first and easy to combine with media queries to create a fully responsive grid, starting from any number of columns.
 
+**[View Demo](http://demo.madebyraygun.com/gridonkulous)** | **[Download](https://github.com/daltonrooney/Gridonkulous/archive/master.zip)**
+
 ###Usage
 
 Import grid.less into your Less stylesheet and change the variables at the top if necessary. You can set up your grid with any number of columns and set your gutter in px, ems, or %; Each column is 100% by default (mobile-first design) so set a breakpoint where you want the columns to kick in.
@@ -39,3 +41,6 @@ Import grid.less into your Less stylesheet and change the variables at the top i
 }
 ```
 
+### Credits
+
+Made by [Raygun](http://madebyraygun.com). Inspired by [The Semantic Grid System](http://semantic.gs) and [Dead Simple Grid](https://github.com/mourner/dead-simple-grid).
