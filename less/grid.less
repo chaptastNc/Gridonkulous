@@ -1,0 +1,62 @@
+/* 
+ * Gridonkulous: a tiny fluid grid system for Less 
+ * http://github.com/daltonrooney/gridonkulous
+ * MIT License: http://opensource.org/licenses/MIT
+ */
+
+/* Change these variables */
+@total-columns: 12; /* Any number of columns */
+@gutter: 15px; /* px, ems, or % */
+@breakpoint: 600px; /* When do the columns kick in? By default, columns are 100% width. */
+
+/* You probably don't want to edit below this line */
+
+.columns(@x) {
+	width: (@x/@total-columns) * 100%;
+}
+
+.push(@x) {
+	margin-left: (@x/@total-columns) * 100%;
+}
+
+.row, .col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row {
+	padding: 0 20px;
+	
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	.row {
+		margin: 0 -@gutter;
+	}
+}
+
+.col {
+	float: left;
+	width: 100%;
+}
+
+@media only screen and (min-width: @breakpoint ) {
+	.col {
+		padding: 0 @gutter;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
