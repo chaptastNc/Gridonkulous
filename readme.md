@@ -43,4 +43,4 @@ Import grid.less into your Less stylesheet and change the variables at the top i
 
 ### Credits
 
-Made by [Raygun](http://madebyraygun.com). Inspired by [The Semantic Grid System](http://semantic.gs) and [Dead Simple Grid](https://github.com/mourner/dead-simple-grid).
+Made by [Raygun](http://madebyraygun.com). Inspired by [The Semantic Grid System](http://semantic.gs) and [Dead Simple Grid](https://github.com/mourner/dead-simple-grid). [CodeKit](http://incident57.com/codekit/) is awesome.
