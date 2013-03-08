@@ -23,9 +23,9 @@ Import grid.less into your Less stylesheet and change the variables at the top i
 }
 ```
 
-*In your markup:* Add a "row" class to the containing element for each row and a "col" class to each element in your grid. You can use semantic class names (i.e.: primary, secondary) or numerical class names (i.e.: one, two, thirteen).
+**In your markup:** Add a "row" class to the containing element for each row and a "col" class to each element in your grid. You can use semantic class names (i.e.: primary, secondary) or numerical class names (i.e.: one, two, thirteen).
 
-*In your stylesheet:* Add the .columns() mixin to already existing classes or create new classes. Wrap it inside a media query using the @breakpoint variable for mobile-first layout. If you need multiple breakpoints, just add them in order: 
+**In your stylesheet:** Add the .columns() mixin to already existing classes or create new classes. Wrap it inside a media query using the @breakpoint variable for mobile-first layout. If you need multiple breakpoints, just add them in order: 
 
 ```css
 @media only screen and (min-width: 600px) {
