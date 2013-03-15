@@ -16,7 +16,7 @@
 }
 
 .push(@x) {
-	margin-left: (@x/@total-columns) * 100%;
+	margin-left: (((@x/@total-columns) * 100%) + ( @gutter/2 ));
 }
 
 .row, .col {
