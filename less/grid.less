@@ -6,13 +6,13 @@
 
 /* Change these variables */
 @total-columns: 12; /* Any number of columns */
-@gutter: 15px; /* px, ems, or % */
+@gutter: 2; /* in % */
 @breakpoint: 600px; /* When do the columns kick in? By default, columns are 100% width. */
 
 /* You probably don't want to edit below this line */
 
 .columns(@x) {
-	width: (@x/@total-columns) * 100%;
+	width: (((@x/@total-columns) * 100% ) - ( @gutter / 2 ));
 }
 
 .push(@x) {
@@ -27,7 +27,7 @@
 
 .row {
 	padding: 0 20px;
-	
+
 	&:before, &:after {
 		content: "";
 		display: table;
@@ -38,7 +38,7 @@
 	}
 
 	.row {
-		margin: 0 -@gutter;
+		margin: 0 -( @gutter * 1% );
 	}
 }
 
@@ -47,14 +47,15 @@
 	width: 100%;
 
 	@media only screen and (min-width: @breakpoint ) {
-		padding: 0 @gutter;
+		margin: 0 (( @gutter / 2 ) * 1% );
 
 		&:first-child {
-			padding-left: 0;
+			margin-left: 0;
 		}
 
 		&:last-child {
-			padding-right: 0;
+			margin-right: 0;
 		}
 	}
 }
+

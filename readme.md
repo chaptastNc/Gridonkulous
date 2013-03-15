@@ -7,7 +7,7 @@ Gridonkulous is a simple fluid grid system for Less. You can use it with semanti
 
 ###Usage
 
-Import grid.less into your Less stylesheet and change the variables at the top if necessary. You can set up your grid with any number of columns and set your gutter in px, ems, or %; Each column is 100% by default (mobile-first design) so set a breakpoint where you want the columns to kick in.
+Import grid.less into your Less stylesheet and change the variables at the top if necessary. You can set up your grid with any number of columns and set your gutter in %; Each column is 100% by default (mobile-first design) so set a breakpoint where you want the columns to kick in.
 
 ###Example
 

@@ -66,7 +66,7 @@ acronym {
  */
 /* Change these variables */
 /* Any number of columns */
-/* px, ems, or % */
+/* in % */
 /* When do the columns kick in? By default, columns are 100% width. */
 /* You probably don't want to edit below this line */
 .row,
@@ -87,7 +87,7 @@ acronym {
   clear: both;
 }
 .row .row {
-  margin: 0 -15px;
+  margin: 0 -2%;
 }
 .col {
   float: left;
@@ -95,13 +95,13 @@ acronym {
 }
 @media only screen and (min-width: 600px) {
   .col {
-    padding: 0 15px;
+    margin: 0 1%;
   }
   .col:first-child {
-    padding-left: 0;
+    margin-left: 0;
   }
   .col:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 /* Simple body styles for demo */
@@ -159,46 +159,46 @@ header {
  */
 @media only screen and (min-width: 600px) {
   .primary {
-    width: 66.66666666666666%;
+    width: 65.66666666666666%;
   }
   .secondary {
-    width: 33.33333333333333%;
+    width: 32.33333333333333%;
   }
   .one {
-    width: 8.333333333333332%;
+    width: 7.333333333333332%;
   }
   .two {
-    width: 16.666666666666664%;
+    width: 15.666666666666664%;
   }
   .three {
-    width: 25%;
+    width: 24%;
   }
   .four {
-    width: 33.33333333333333%;
+    width: 32.33333333333333%;
   }
   .five {
-    width: 41.66666666666667%;
+    width: 40.66666666666667%;
   }
   .six {
-    width: 50%;
+    width: 49%;
   }
   .seven {
-    width: 58.333333333333336%;
+    width: 57.333333333333336%;
   }
   .eight {
-    width: 66.66666666666666%;
+    width: 65.66666666666666%;
   }
   .nine {
-    width: 75%;
+    width: 74%;
   }
   .ten {
-    width: 83.33333333333334%;
+    width: 82.33333333333334%;
   }
   .eleven {
-    width: 91.66666666666666%;
+    width: 90.66666666666666%;
   }
   .twelve {
-    width: 100%;
+    width: 99%;
   }
   .push-1 {
     margin-left: 8.333333333333332%;
