@@ -41,6 +41,12 @@ Import grid.less into your Less stylesheet and change the variables at the top i
 }
 ```
 
+### Notes
+
+There seems to be a percentage rounding issue in Safari and Mobile Safari that is most noticeable in rows with many columns. More information [here](http://css-tricks.com/percentage-bugs-in-webkit/). The layout is fine in IE8 and up, and all recent versions of Firefox and Chrome. The bug was fixed in Webkit in 2012, so it should make it's way into Safari someday.
+
+The demo uses css3-mediaqueries.js and html5shive.js for IE8.
+
 ### Credits
 
 Made by [Raygun](http://madebyraygun.com). Inspired by [The Semantic Grid System](http://semantic.gs) and [Dead Simple Grid](https://github.com/mourner/dead-simple-grid). [CodeKit](http://incident57.com/codekit/) is awesome.
