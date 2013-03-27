@@ -12,7 +12,7 @@
 /* You probably don't want to edit below this line */
 
 .columns(@x) {
-	width: (((@x/@total-columns) * 100% ) - ( @gutter ));
+	width: (((@x/@total-columns) * 100% ) - ( @gutter - (@x/@total-columns) * @gutter ));
 }
 
 .push(@x) {
